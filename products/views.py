@@ -25,3 +25,5 @@ class ProductsListAPIView(APIView):
 
         json_data = cache.get(cache_key)  # 만약 캐시에 데이터가 있으면 get 으로 가져와서
         return Response(json_data)  # 전 송 ~ !
+
+

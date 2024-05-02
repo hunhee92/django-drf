@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Article list</h2>
+    <hr><br>
+    {% for articles in article %}
+          <h3>제목 {{articles.title}}</h3>
+          <p>내용 {{articles.content}}</p>
+          <p>생성일 {{articles.create_at}}</p>
+          <p>업데이트 {{articles.update_at}}</p>
+          <hr>
+    {% endfor %}
+    
+</body>
+</html>
